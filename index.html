@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <head>
 	<title>Cross domain iframe example</title>
+	<style>
+		[data-frame-id] {
+			height: 500px;
+		}
+		iframe {
+			min-height: 100%;
+		}
+	</style>
 </head>
 <div
 data-frame-id="iframe"
-data-frame-src="http://localhost/cross-domain-iframe/frame-content.html"
+data-frame-src="http://localhost:3000"
 />
-
+<!-- http://localhost/cross-domain-iframe/frame-content.html -->
 
 <script src="./index.js"></script>
 </html>

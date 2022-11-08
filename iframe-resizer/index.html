@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Iframe resizer library</title>
+	<style>
+	  iframe {
+	    width: 1px;
+	    min-width: 100%;
+	  }
+	</style>
+</head>
+<body>
+<script src="./js/iframeResizer.min.js"></script>
+<iframe id="myIframe" src="http://localhost:3000"></iframe>
+<script>
+  myIframe.onload = function() {
+  	const alpha = iFrameResize({ log: true }, '#myIframe');
+  }
+</script>
+</body>
+</html>

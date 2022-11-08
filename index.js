@@ -37,7 +37,7 @@
 	// waits for a mesage event on iframe
 	function handleIframeMsgEvent(msgEvent) {
 		const iframeEl = document.querySelector(`[name=${iframeName}]`);
-		
+		console.log(msgEvent);
 		if ('height' in msgEvent.data) {
 			iframeEl.height = msgEvent.data.height;
 		}
